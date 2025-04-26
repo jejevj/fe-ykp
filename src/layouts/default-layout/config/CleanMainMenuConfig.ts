@@ -24,13 +24,6 @@ const MainMenuConfig: Array<MenuItem> = [
           },
         ],
       },
-
-      {
-        heading: "Setting Satuan",
-        route: "/satuan",
-        keenthemesIcon: "setting-4",
-        bootstrapIcon: "bi-app-indicator",
-      },
       {
         sectionTitle: "Pengguna",
         route: "/pengguna",
@@ -57,27 +50,16 @@ const MainMenuConfig: Array<MenuItem> = [
         keenthemesIcon: "truck",
         sub: [
           {
-            heading: "accountOverview",
-            route: "/crafted/account/overview",
+            heading: "Form Pengajuan Loading",
+            route: "/loading/pengajuan",
           },
           {
-            heading: "settings",
-            route: "/crafted/account/settings",
-          },
-        ],
-      },
-      {
-        sectionTitle: "Laporan",
-        route: "/Laporan",
-        keenthemesIcon: "document",
-        sub: [
-          {
-            heading: "accountOverview",
-            route: "/crafted/account/overview",
+            heading: "List Loading",
+            route: "/loading/list-loading",
           },
           {
-            heading: "settings",
-            route: "/crafted/account/settings",
+            heading: "Approval Loading",
+            route: "/loading/approval",
           },
         ],
       },
@@ -88,9 +70,36 @@ const MainMenuConfig: Array<MenuItem> = [
         bootstrapIcon: "bi-app-indicator",
       },
       {
+        sectionTitle: "Laporan",
+        route: "/laporan",
+        keenthemesIcon: "document",
+        sub: [
+          {
+            heading: "Generate Laporan",
+            route: "/laporan/generate-laporan",
+          },
+          {
+            heading: "Semua Laporan",
+            route: "/laporan/laporan-all",
+          },
+        ],
+      },
+      {
         heading: "Cetak Faktur",
         route: "/cetak-faktur",
         keenthemesIcon: "printer",
+        bootstrapIcon: "bi-app-indicator",
+      },
+      {
+        heading: "Setting Satuan",
+        route: "/satuan",
+        keenthemesIcon: "setting-4",
+        bootstrapIcon: "bi-app-indicator",
+      },
+      {
+        heading: "Setting",
+        route: "/main-setting",
+        keenthemesIcon: "gear",
         bootstrapIcon: "bi-app-indicator",
       },
     ],

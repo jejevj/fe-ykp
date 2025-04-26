@@ -13,13 +13,13 @@
         <!--begin::Title-->
         <div class="fs-2hx fw-bold text-gray-800 text-center mb-13">
           <span class="me-2">
-            Try our all new Enviroment with
+            Selamat datang di sistem manajemen perusahaan 
             <br />
             <span class="position-relative d-inline-block text-danger">
               <router-link
                 to="/crafted/account/overview"
                 class="text-danger opacity-75-hover"
-                >Pro Plan</router-link
+                >Nama PT</router-link
               >
               <!--begin::Separator-->
               <span
@@ -27,13 +27,13 @@
               ></span>
               <!--end::Separator-->
             </span> </span
-          >for Free
+          >
         </div>
         <!--end::Title-->
 
         <!--begin::Action-->
         <div class="text-center">
-          <a href="#" class="btn btn-sm btn-dark fw-bold"> Upgrade Now </a>
+          <a href="#" class="btn btn-sm btn-dark fw-bold"> Hubungi Developer </a>
         </div>
         <!--begin::Action-->
       </div>

@@ -94,6 +94,95 @@ const routes: Array<RouteRecordRaw> = [
           },
         ],
       },
+      {
+        path: "/loading",
+        name: "loading",
+        // component: () => import("@/views/crafted/account/Account.vue"),
+        meta: {
+          breadcrumbs: ["Manajemen", "Loading"],
+        },
+        children: [
+          {
+            path: "list-loading",
+            name: "list-loading",
+            component: () => import("@/views/loading/ListLoading.vue"),
+            meta: {
+              pageTitle: "List Loading",
+            },
+          },
+          {
+            path: "pengajuan",
+            name: "pengajuan",
+            component: () => import("@/views/loading/PengajuanLoading.vue"),
+            meta: {
+              pageTitle: "List Pengajuan Loading",
+            },
+          },
+          {
+            path: "approval",
+            name: "approval",
+            component: () => import("@/views/loading/ApprovalLoading.vue"),
+            meta: {
+              pageTitle: "Approval Loading",
+            },
+          },
+        ],
+      },
+      {
+        path: "/main-setting",
+        name: "main-setting",
+        component: () => import("@/views/satuan/Satuan.vue"),
+        meta: {
+          pageTitle: "Pengaturan",
+          breadcrumbs: ["Pengaturan Utama"],
+        },
+      },
+
+      {
+        path: "/laporan",
+        name: "laporan",
+        // component: () => import("@/views/crafted/account/Account.vue"),
+        meta: {
+          breadcrumbs: ["Manajemen", "Laporan"],
+        },
+        children: [
+          {
+            path: "generate-laporan",
+            name: "generate-laporan",
+            component: () => import("@/views/laporan/GenerateLaporan.vue"),
+            meta: {
+              pageTitle: "Buat Laporan",
+            },
+          },
+          {
+            path: "laporan-all",
+            name: "laporan-all",
+            component: () => import("@/views/laporan/AllLaporan.vue"),
+            meta: {
+              pageTitle: "Laporan Keseluruhan",
+            },
+          },
+        ],
+      },
+
+      {
+        path: "/transaksi",
+        name: "transaksi",
+        component: () => import("@/views/transaksi/Transaksi.vue"),
+        meta: {
+          pageTitle: "Satuan",
+          breadcrumbs: ["Satuan"],
+        },
+      },
+      {
+        path: "/cetak-faktur",
+        name: "cetak-faktur",
+        component: () => import("@/views/faktur/CetakFaktur.vue"),
+        meta: {
+          pageTitle: "Satuan",
+          breadcrumbs: ["Satuan"],
+        },
+      },
     ],
   },
   {
